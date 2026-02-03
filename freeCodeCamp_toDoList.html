@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo Links Lab</title>
+</head>
+<body>
+
+    <style>
+        ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.todo-list li {
+  margin-bottom: 15px;
+}
+
+label {
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+.sub-item {
+  padding-left: 20px;
+}
+
+.sub-item-link {
+  text-decoration: none;
+}
+
+.sub-item-link:link {
+  color: #1E90FF;
+}
+
+.sub-item-link:visited {
+  color: #800080;
+}
+
+.sub-item-link:hover {
+  color: #FF4500;
+}
+
+.sub-item-link:active {
+  color: #32CD32;
+}
+
+.sub-item-link:focus {
+  outline: 2px solid #FFD700;
+  outline-offset: 2px;
+}
+
+
+    </style>
+  
+  <h1>Todo List with Styled Links</h1>
+
+  <ul class="todo-list">
+    <li>
+      <input type="checkbox" id="task1">
+      <label for="task1">Learn HTML</label>
+      <ul class="sub-item">
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="sub-item-link" target="_blank">MDN HTML Guide</a></li>
+      </ul>
+    </li>
+    <li>
+      <input type="checkbox" id="task2">
+      <label for="task2">Learn CSS</label>
+      <ul class="sub-item">
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="sub-item-link" target="_blank">MDN CSS Guide</a></li>
+      </ul>
+    </li>
+    <li>
+      <input type="checkbox" id="task3">
+      <label for="task3">Learn JavaScript</label>
+      <ul class="sub-item">
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="sub-item-link" target="_blank">MDN JavaScript Guide</a></li>
+      </ul>
+    </li>
+    <li>
+      <input type="checkbox" id="task4">
+      <label for="task4">Learn Git</label>
+      <ul class="sub-item">
+        <li><a href="https://git-scm.com/doc" class="sub-item-link" target="_blank">Git Documentation</a></li>
+      </ul>
+    </li>
+  </ul>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Post Card</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        body {
+  background-color: #f0f4f8;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.blog-post-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  width: 350px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.post-img {
+  width: 100%;
+  border-bottom: 3px solid #ddd;
+}
+
+.post-content {
+  padding: 20px;
+}
+
+.post-title {
+  color: #2c3e50;
+  margin: 10px 0;
+}
+
+.post-excerpt {
+  color: #34495e;
+  margin: 10px 0 20px 0;
+}
+
+.read-more {
+  color: #ffffff;
+  background-color: #1e90ff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: inline-block;
+  margin: 10px 0;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.read-more:hover {
+  background-color: #0b75d6;
+}
+
+    </style>
+  <div class="blog-post-card">
+    <img src="https://cdn.freecodecamp.org/curriculum/labs/cover-photo.jpg" alt="Blog Cover Photo" class="post-img">
+    <div class="post-content">
+      <h2 class="post-title">Exploring the Beauty of Nature</h2>
+      <p class="post-excerpt">Discover the wonders of our natural world and how to appreciate it every day.</p>
+      <a href="#" class="read-more">Read More</a>
+    </div>
+  </div>
+</body>
+</html>
