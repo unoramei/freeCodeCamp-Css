@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newspaper Layout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+
+.newspaper-layout {
+  display: grid;
+  grid-template-areas:
+    "title title title"
+    "feature-article feature-article cover-image"
+    "secondary-article secondary-article cover-image"
+    "small-article1 small-article2 small-article3";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  grid-area: title;
+}
+
+.feature-article {
+  grid-area: feature-article;
+}
+
+.cover-image {
+  grid-area: cover-image;
+}
+
+.secondary-article {
+  grid-area: secondary-article;
+}
+
+.small-article1 {
+  grid-area: small-article1;
+}
+
+.small-article2 {
+  grid-area: small-article2;
+}
+
+.small-article3 {
+  grid-area: small-article3;
+}
+
+.title h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 2em;
+  color: #222;
+}
+
+article h2, article h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+article p {
+  margin: 0;
+  color: #555;
+}
+
+.cover-image img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+article, .cover-image {
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+</style>
+
+<body>
+  <main class="newspaper-layout">
+
+    <header class="title">
+      <h1>The Daily Times</h1>
+    </header>
+
+    <article class="feature-article">
+      <h2>Main Headline</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor.</p>
+    </article>
+
+    <figure class="cover-image">
+      <img src="https://via.placeholder.com/300x200" alt="Cover Image">
+    </figure>
+
+    <article class="secondary-article">
+      <h2>Secondary News</h2>
+      <p>Curabitur nec lacus elit. Pellentesque convallis nisi ac augue pharetra eu tristique neque.</p>
+    </article>
+
+    <article class="small-article1">
+      <h3>Local News 1</h3>
+      <p>Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum.</p>
+    </article>
+
+    <article class="small-article2">
+      <h3>Local News 2</h3>
+      <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+    </article>
+
+    <article class="small-article3">
+      <h3>Local News 3</h3>
+      <p>Nam vulputate dapibus. Morbi vestibulum volutpat enim, in laoreet ligula fermentum at.</p>
+    </article>
+
+  </main>
+</body>
+
+</html>
