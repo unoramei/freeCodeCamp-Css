@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Classified Internal Memo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <style>
+#email {
+    id: email;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    width: 500px;
+    border: 2px solid #333;
+    box-sizing: border-box; 
+    font-family: "Courier New", Courier, monospace;
+    background-color: #f4f1ea;
+    color: #222;
+}
+
+
+#confidential, #top-secret {
+    display: inline-block;
+    padding: 10px;
+    margin-left: 15px;
+    border: 3px solid;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+#confidential {
+    color: #a30000;
+    border-color: #a30000;
+    transform: rotate(-10deg);
+}
+
+#top-secret {
+    color: #000;
+    border-color: #000;
+    transform: rotate(5deg);
+}
+
+.blurred {
+    filter: blur(3px);
+    background-color: #ccc;
+    color: transparent;
+    transition: filter 0.3s ease;
+}
+
+.blurred:hover {
+    filter: blur(0);
+    color: inherit;
+}
+    </style>
+
+    <main id="email">
+        <div id="confidential">CONFIDENTIAL</div>
+        <div id="top-secret">TOP SECRET</div>
+
+        <p>Subject: Project "Nebula" Status Report. <span class="blurred">The satellite has reached orbit</span> and is currently transmitting data to the subterranean base.</p>
+        
+        <p>We encountered a minor setback near the <span class="blurred">sector 7 extraction point</span>. However, the assets were recovered without alerting local authorities.</p>
+        
+        <p>Please ensure that <span class="blurred">Agent Richardson</span> is briefed on the new protocols before the 0500 hours deadline tomorrow.</p>
+    </main>
+
+</body>
+</html>
